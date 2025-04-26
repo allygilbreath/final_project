@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery by Ally - Gallery</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@800&family=IBM+Plex+Mono:wght@700&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="css3/gallery.css?v=14">
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="images/aglogo.png" alt="Gallery Logo" class="logo">
+    </a>
+
+
+  <main>
+    <section id="gallery">
+      <h1 class="gallery-header">// WELCOME TO MY VISUAL WORLD //</h1>
+      <div class="gallery-container">
+
+        <div class="art-piece">
+          <p class="art-title">TITLE :<br>I ONLY KNOW WHAT<br>I KNOW NOW</p>
+          <img src="images/know.jpg" alt="I Only Know What I Know Now artwork">
+          <a href="thankyou.html" class="print-button">request this print</a>
+        </div>
+
+        <div class="art-piece">
+          <p class="art-title">TITLE :<br>ABSTRACT<br>THINKING</p>
+          <img src="images/abstract.jpg" alt="Abstract Thinking artwork">
+          <a href="thankyou.html" class="print-button">request this print</a>
+        </div>
+
+        <div class="art-piece">
+          <p class="art-title">TITLE :<br>CAN'T<br>CHANGE CHANGE</p>
+          <img src="images/change.jpg" alt="Can't Change Change artwork">
+          <a href="thankyou.html" class="print-button">request this print</a>
+        </div>
+
+        <div class="art-piece">
+          <p class="art-title">TITLE :<br>OH DEER<br>I'M BLUE</p>
+          <img src="images/deer.png" alt="Oh Deer I'm Blue artwork">
+          <a href="thankyou.html" class="print-button">request this print</a>
+        </div>
+
+        <div class="art-piece">
+          <p class="art-title">TITLE :<br>MOONIE</p>
+          <img src="images/moonie.jpg" alt="Moonie artwork">
+          <a href="thankyou.html" class="print-button">request this print</a>
+        </div>
+
+        <div class="art-piece">
+          <p class="art-title">TITLE :<br>DESPITE<br>IT ALL</p>
+          <img src="images/soft.jpg" alt="Despite It All artwork">
+          <a href="thankyou.html" class="print-button">request this print</a>
+        </div>
+
+        <a href="#gallery" class="back-to-top">back to top</a>
+
+      </div>
+    </section>
+  </main>
+  
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+      }
+    });
+  });
+
+  document.querySelectorAll('.art-piece').forEach(art => {
+    observer.observe(art);
+  });
+</script>
+</body>
+</html>
+
+
+</body>
+</html>

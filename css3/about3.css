@@ -1,0 +1,151 @@
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+body {
+  background-color: #1E1E1E;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+  color: #30C382;
+  background-image: url('../images/blackdeer.png');
+  background-repeat: no-repeat;
+  background-position: -150px -250px;
+  background-size: 1200px;
+}
+
+.logo {
+  width: 200px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 80px;
+  box-sizing: border-box;
+}
+
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.about-word, .the-word, .artist-word {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 180px;
+  margin: 0;
+  color: #30C382;
+  line-height: 0.85;
+}
+
+
+.ally-gilbreath,
+.age,
+.location,
+.description,
+.button {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* delay fade in */
+.ally-gilbreath {
+  animation-delay: 0.5s;
+}
+
+.age {
+  animation-delay: 1s;
+}
+
+.location {
+  animation-delay: 1.5s;
+}
+
+.description {
+  animation-delay: 2s;
+}
+
+.button {
+  animation-delay: 2.5s;
+}
+
+
+.about {
+  font-size: 200px;
+  position: relative;
+  top: -100px;
+  left: -50px;
+}
+
+.the {
+  font-size: 200px;
+  position: relative;
+  top: 53px;
+  left: -349px;
+}
+
+.artist {
+  font-size: 200px;
+  position: relative;
+  top: 30px;
+  left: -14px;
+}
+
+
+.info-text {
+  margin-top: 50px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  color: #30C382;
+  line-height: 1.4;
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
+
+
+.about-right {
+  max-width: 300px;
+  text-align: left;
+}
+
+
+.description {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  color: #30C382;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.button {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #FFFFFF;
+  color: #1E1E1E;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+}

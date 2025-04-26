@@ -1,0 +1,154 @@
+
+
+body {
+    background-color: #30C382;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+    color: #1E1E1E;
+  }
+  
+  .logo {
+    width: 200px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .top-nav {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+  }
+  
+  .about-link {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  
+  .thankyou-container {
+    text-align: center;
+   
+    position: relative;
+  }
+  
+  .thankyou-title {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 120px;
+    line-height: 1;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+  
+  .thank {
+    font-family:'epilogue', sans-serif;
+    font-size: 150px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  
+  .you {
+    font-family: 'epilogue', sans-serif;
+    font-size: 150px;
+    color: #ffffff;
+    position: absolute;
+    margin: -70px 0 0 197px;
+
+  }
+  
+  .thankyou-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    color: #1E1E1E;
+    text-align: left;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .thankyou-text strong {
+    font-size: 20px;
+  }
+  
+  .thankyou-text ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .thankyou-text ul li {
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .deer-img {
+    width: 500px;
+    position: absolute;
+    bottom: 80px;
+    right: 200px;
+  }
+  .button-container {
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @keyframes fadeInDeer {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .deer-img {
+    width: 500px;
+    position: absolute;
+    bottom: 80px;
+    right: 200px;
+    opacity: 0;
+    animation: fadeInDeer 2s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  @keyframes fadeInButtonThankYou {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .button-container {
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeInButtonThankYou 2s ease-out forwards;
+    animation-delay: 1.5s;
+  }

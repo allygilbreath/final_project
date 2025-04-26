@@ -1,0 +1,126 @@
+/* Base page styles */
+header {
+  position: relative;
+}
+
+body {
+  background-color: #30C382;
+  background-image: url('../images/blackdeer.png');
+  background-repeat: no-repeat;
+  background-position: -200px -160px; 
+  background-size: 1100px; 
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+  color: #1E1E1E;
+}
+
+/* Logo image */
+.logo {
+  width: 200px;
+  height: auto;
+ 
+  
+
+
+}
+
+.main-title {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 190px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 0.8;
+  position: relative;
+}
+
+.gallery-word {
+  display: block;
+  margin-left: -200px;
+  margin-top: -140px;
+}
+
+.by-ally-word {
+  display: block;
+  margin-left: 388px; 
+  margin-top: -160px
+}
+
+.top-nav {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.about-link {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.intro {
+  position: absolute;
+  bottom: 80px;
+  right: 100px;
+  text-align: left;
+}
+
+
+
+.welcome-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* Button styling */
+.button {
+  font-family: 'IBM Plex Mono', monospace;
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #1E1E1E;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+@keyframes fadeInIntro {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 19px;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeInIntro 2s ease-out forwards;
+  animation-delay: 1s;
+}
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button {
+  opacity: 0;
+  animation: fadeInButton 2s ease-out forwards;
+  animation-delay: 2s;
+}
